@@ -1,0 +1,19 @@
+import java.util.*;
+public class ListIteratorTest{
+	public static void main(String[] args){
+		String[] books={"123","456"};
+		List bookList=new ArrayList();
+		for(int i=0;i<book.length;i++){
+			bookList.add(books[i]);
+		}
+		ListIterator l=bookList.listIterator();
+		while(l.hasNext()){
+			System.out.println(l.next());
+			l.add("---");
+		}
+		System.out.println("=====");
+		while(l.hasPrevious()){
+			System.out.println(l.previous());
+		}
+	}
+}

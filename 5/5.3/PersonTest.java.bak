@@ -1,0 +1,18 @@
+class Person{
+	public String name;
+	public static int count;
+}
+public class PersonTest{
+	public static void main(String[] args){
+	System.out.println("Person.count:"+Person.count);
+	Person p=new Person();
+	System.out.println("p.name"+p.name+"\np.count:"+p.count);
+	p.name="123";
+	p.count=321;
+	System.out.println("p.name"+p.name+"\np.count:"+p.count);
+	System.out.println("Person.count:"+Person.count);
+
+	Person p2=new Person();
+	System.out.println("Person.count:"+Person.count);
+	}
+}

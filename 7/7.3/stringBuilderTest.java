@@ -1,0 +1,26 @@
+public class stringBuilderTest{
+	public static void main(String[] arg){
+		StringBuilder sb=new StringBuilder();
+		System.out.println(sb);
+
+		sb.append("java");
+		System.out.println(sb);
+
+		sb.insert(0,"hello ");
+		System.out.println(sb);
+
+
+		sb.replace(5,6,",");
+		System.out.println(sb);
+
+		sb.delete(5,6);
+		System.out.println(sb);
+		
+		sb.reverse();
+		System.out.println(sb);
+
+		System.out.println(sb.length());
+		System.out.println(sb.capacity());
+
+	}
+}

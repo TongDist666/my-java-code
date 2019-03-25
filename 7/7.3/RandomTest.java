@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class RandomTest{
+	public static void main(String[] args){
+		Random r=new Random();
+		System.out.println(r.nextBoolean());
+
+		byte[] buffer = new byte[16];
+		r.nextBytes(buffer);
+		System.out.println(Arrays.toString(buffer));
+
+		System.out.println(r.nextDouble());
+		System.out.println(r.nextFloat());
+		System.out.println(r.nextGaussian());
+		System.out.println(r.nextInt(36));
+	}
+}

@@ -1,0 +1,8 @@
+import java.util.regex.*;
+public class FindGroup{
+	public static void main(String[] args){
+		String s="123¹þ¹þ¹þ654¹þ¹þ¹þ789¹ö¹ö¹ö";
+		Matcher m=Pattern.compile("(\\d{3})").matcher(s);
+		while(m.find()) System.out.println(m.group());
+	}
+}

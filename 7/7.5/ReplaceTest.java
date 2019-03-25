@@ -1,0 +1,18 @@
+import java.util.regex.*;
+public class ReplaceTest{
+	public static void main(String[] args){
+		String[] s={
+			"asd123 321",
+			"asd456 456",
+			"asd789 789"
+		};
+		Pattern p=Pattern.compile("as\\w*");
+		Matcher m=null;
+		for(int i=0;i<s.length;i++){
+			if(m==null) m=p.matcher(s[i]);
+			else m.reset(s[i]);
+			System.out.println(m.replaceAll("haha:)"));
+		}
+		
+	}
+}

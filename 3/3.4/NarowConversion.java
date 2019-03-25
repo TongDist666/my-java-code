@@ -1,0 +1,9 @@
+public class NarowConversion{
+	public static void main(String[] args){
+		int a=(byte)128;
+		System.out.println(a);//Êä³ö-128
+		double b=(int)10.5;
+		int c=(int)10.5;
+		System.out.println(""+b+'\n'+c);
+	}
+}

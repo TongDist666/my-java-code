@@ -1,0 +1,17 @@
+import java.util.*;
+public class TreeSetTest{
+	public class static void main(String[] args){
+		TreeSet nums=new TreeSet();
+		nums.add(5);
+		nums.add(10);
+		nums.add(2);
+		nums.add(-8);
+
+		System.out.println(nums);
+		System.out.println(nums.first());
+		System.out.println(nums.last());
+		System.out.println(nums.headSet(6));
+		System.out.println(nums.tailSet(7));
+		System.out.println(nums.subSet(1,6));
+	}
+}

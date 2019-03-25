@@ -1,0 +1,12 @@
+public class CharTest 
+{
+	public static void main(String[] args) 
+	{
+		char a='a';
+		char b='\u9999';
+		char c='\n';
+		System.out.println(""+a+b+c);
+
+		System.out.println("Hello World!");
+	}
+}

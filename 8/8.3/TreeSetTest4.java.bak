@@ -1,0 +1,25 @@
+import java.util.*;
+class R implements Comparable{
+	int count;
+	public R(int count){
+		this.count=count;
+	}
+	public String toString(){
+		return "R=["+count+"]";
+	}
+}
+public class TreeSetTest4{
+	public static void main(String[] args){
+		TreeSet t=new TreeSet((o1,o2)->{
+			R r1=(R)o1;
+			R r2=(R)o2;
+			return r1.count>r2.count?-1:r1.count<r2.count?1:0;
+		});
+		t.add(new R(5));
+		t.add(new R(-3));
+		t.add(new R(9));
+		t.add(new R(-2));
+
+		System.out.println(t);
+	}
+}

@@ -1,0 +1,11 @@
+public class  java_17Inetaddresstest
+{
+	public static void main(String[] args) 
+	{
+		throw Exception{
+		InetAddress ip=InetAddress.getByName("www.baidu.com");
+		System.out.println("crazyÊÇ·ñ¿É´ï£º"+ip.isReachable(2000));
+		}
+		System.out.println("Hello World!");
+	}
+}

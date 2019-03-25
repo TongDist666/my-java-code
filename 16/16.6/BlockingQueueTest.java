@@ -1,0 +1,9 @@
+import java.util.concurrent.*;
+public class BlockingQueueTest{
+	public static void main(String[] args) throws Exception{
+		BlockingQueue<String> bp=new ArrayBlockingQueue<>(2);
+		bp.put("java");
+		bp.put("java");
+		bp.put("javja");
+	}
+}

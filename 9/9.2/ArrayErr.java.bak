@@ -1,0 +1,8 @@
+import java.util.*;
+public class ArrayErr{
+	public static void main(String[] args){
+		Interger[] i=new Interger[5];
+		Number[] n=i;
+		n[0]=0.3;
+	}
+}

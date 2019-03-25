@@ -1,0 +1,9 @@
+public class parseTest{
+	public static void main(String[] args){
+		String a="123";
+
+		System.out.println(Integer.parseInt(a));
+		System.out.println(Double.parseDouble(a));
+
+	}
+}
